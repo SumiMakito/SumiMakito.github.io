@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="ico/favicon.png">
+<title>Bilisound安卓客户端</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]>
+      <script src="../../docs-assets/js/ie8-responsive-file-warning.js">
+      </script>
+    <![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js">
+      </script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js">
+      </script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+body {
+	background-color: #ECECEC;
+	background-image: url(http://ww1.sinaimg.cn/large/8ea9cb57tw1ef558k819vj21hc0xc7fl.jpg);
+	background-repeat:no-repeat;
+}
+-->
+</style>
+<script language="javascript">
+      eval(function(p, a, c, k, e, d) {
+        e = function(c) {
+          return (c < a ? "": e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+        };
+        if (!''.replace(/^/, String)) {
+          while (c--) d[e(c)] = k[c] || e(c);
+          k = [function(e) {
+            return d[e]
+          }];
+          e = function() {
+            return '\\w+'
+          };
+          c = 1;
+        };
+        while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+        return p;
+      } ('i 5$=["h","d","d","d"];9 j(){b a};7(g(6["8"]["f"])!=5$[0]){6["8"]["f"]=9(4){7(4["c"]["e"]!=5$[1]){b a}}}k{6["8"]["m"]=9(4){7(4["c"]["e"]!=5$[2]){b a}};6["8"]["l"]=9(4){7(4["c"]["e"]!=5$[3]){b a}}}', 23, 23, '||||O6df86aa|_|window|if|document|function|false|return|target|INPUT|tagName|onselectstart|typeof|undefined|var|f42c8f2c|else|onmouseup|onmousedown'.split('|'), 0, {}))
+    </script>
+</head>
+<body onResize="location=location">
+<div class="navbar navbar-default navbar-static-top" role="navigation"
+    id="nav" style="padding-top:20px;">
+		<div class="container">
+				<div class="navbar-header">
+						<a class="navbar-brand" href="#"> Bilisound 安卓客户端 </a>
+				</div>
+				<div class="collapse navbar-collapse" id="nav-inner">
+						<ul class="nav navbar-nav">
+								<li class="active">
+										<a href="#home" onClick='$("html,body").animate({scrollTop: $("#home").offset().top}, 1000);'> 首页 </a>
+								</li>
+								<li>
+										<a href="http://www.bilibili.fm" target="_blank"> Bilisound官网 </a>
+								</li>
+								<li class="dropdown">
+										<a href="#weibo" onClick='$("html,body").animate({scrollTop: $("#weibo").offset().top}, 1000);'
+              class="dropdown-toggle" data-toggle="dropdown"> 开发者微博 <b class="caret">
+										</b>
+										</a>
+										<ul class="dropdown-menu">
+												<li>
+														<a href="http://weibo.com/u/2393492311" target="_blank"> @SumiMakito </a>
+												</li>
+												<li>
+														<a href="http://weibo.com/u/5048118057" target="_blank"> @站妹 </a>
+												</li>
+										</ul>
+								</li>
+						</ul>
+				</div>
+		</div>
+</div>
+
+<div id="pcDiv"  class="visible-lg visible-md">
+<div id="mainDivBlock" align="center" style="width:100%;">
+		<div class="container" id="mainContainer" style="background-color:transparent;">
+		
+		<div class="row">
+		
+		<div class="col-md-6" id="intro">
+								<div id="slogan" align="left">
+										<h1 style="font-family: '文泉驿正黑', '微软雅黑', '黑体'">Bilisound，</h1>
+										<h1 style="font-family: '文泉驿正黑', '微软雅黑', '黑体'">更轻量、更流畅，</h1>
+<h1 style="font-family: '文泉驿正黑', '微软雅黑', '黑体'">随时提取好音乐。</h1>
+<hr/>
+<p style="font-family: '文泉驿正黑', '微软雅黑', '宋体'; font-size: 14px;">* 现已支持 
+		<a href="http://www.bilibili.tv/" style="color:#DEDEDE">哔哩哔哩弹幕视频网</a>
+与 
+<a href="http://www.nicovideo.jp/" style="color:#DEDEDE">ニコニコ動画</a>
+的视频音乐提取</p>
+<hr/>
+<button type="button" class="btn btn-transparent btn-lg btn-block" style="font-family: '文泉驿正黑', '微软雅黑', '黑体'; font-size: 21px;">内测进行中</button>
+</div>
+		</div>
+		<div class="col-md-6">
+		<img src="http://bs-cache.5220a54d56e92.d01.nanoyun.com/static/HTX_ONE_X_01.png" alt="适用于Android设备的Bilisound客户端" class="img-responsive" id="img-0">
+		</div>
+		
+		</div>
+		
+		</div>
+</div>
+
+
+<div id="footer" style="padding-top:20px; background-color: rgba(255, 255, 255, 0.3)">
+		<div class="container">
+				<div class="row" style="color:#333">
+						<div class="col-xs-6 col-md-4">
+								<p>
+										<span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> ©2014
+										<a href="http://www.bilibili.fm" target="_blank" style="color:#666"> Bilisound </a>
+										&amp; SumiMakito </span>
+								</p>
+								<p>
+										<span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 欢迎提交BUG及反馈建议 </span>
+								</p>
+								<p>
+										<s style="color: #666; font-size: 12px;"> BUG什么的最讨厌了喵 </s>
+								</p>
+								<p style="color: #666; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size: 10px;"> Page designed by SumiMakito </p>
+						</div>
+						<div class="col-xs-6 col-md-4">
+								<address style="text-align:center">
+								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> STAFF </p>
+								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 站长/网站运营
+										<a href="http://weibo.com/u/5048118057" target="_blank" style="color:#666"> @站妹 </a>
+								</p>
+								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 客户端开发
+										<a href="http://weibo.com/u/2393492311" target="_blank" style="color:#666"> @SumiMakito </a>
+								</p>
+								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif">
+										<a href="http://weibo.com/u/3660927987" style="color: #666; font-size: 14px;"> Bilisound官方微博 </a>
+								</p>
+								</address>
+						</div>
+						<div class="col-xs-6 col-md-4" align="right">
+								<p>
+										<span style="color: #666; font-size: 12px;">
+										<s> 常见问题： </s>
+										</span>
+								</p>
+								<p>
+										<span style="color: #666; font-size: 12px;">
+										<s> Q:这个应用有什么用途呢? </s>
+										</span>
+								</p>
+								<p>
+										<span style="color: #666; font-size: 12px;">
+										<s> A:你可以使用它来提取视频中喜欢的音乐 </s>
+										</span>
+								</p>
+								<p>
+										<span style="color: #666; font-size: 12px; font-weight:bold;">
+										<s> 且用且自重，欢迎吐槽。 </s>
+										</span>
+								</p>
+						</div>
+				</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="mobileDiv" class=" visible-sm visible-xs">
+<div id="mainDivBlock" align="center" style="width:100%;">
+		<div class="container" id="mobileContainer" style="background-color:transparent;">
+		
+		<div class="row">
+				<div class="col-md-6">
+		<img src="http://bs-cache.5220a54d56e92.d01.nanoyun.com/static/620_tp.png" alt="适用于Android设备的Bilisound客户端" class="img-responsive" id="mobileImg" width="300px;">
+		</div>
+		<div class="col-md-6" id="mobileIntro">
+								<div id="mobileSlogan" align="left">
+										<h1 style="font-size:30px; font-family: '文泉驿正黑', '微软雅黑', '黑体'">Bilisound，</h1>
+										<h1 style="font-size:30px; font-family: '文泉驿正黑', '微软雅黑', '黑体'">更轻量、更流畅，</h1>
+<h1 style="font-size:30px; font-family: '文泉驿正黑', '微软雅黑', '黑体'">随时提取好音乐。</h1>
+<hr/>
+<p style="font-size:16px;font-size: 14px;">* 现已支持 
+		<a href="http://www.bilibili.tv/" style="color:#DEDEDE; font-size: 12px;">哔哩哔哩弹幕视频网</a>
+与 
+<a href="http://www.nicovideo.jp/" style="color:#DEDEDE;font-size: 12px;">ニコニコ動画</a>
+的视频音乐提取</p>
+<hr/>
+<button type="button" class="btn btn-transparent btn-lg btn-block" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">内测进行中</button>
+</div>
+		</div>
+		
+		</div>
+		
+		</div>
+</div>
+
+
+<div id="mobileFooter" style="padding-top:20px; margin-top:20px; background-color: rgba(255, 255, 255, 0.3)">
+		<div class="container" style="color:#333" align="center">
+								<p>
+										<span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> ©2014
+										<a href="http://www.bilibili.fm" target="_blank" style="color:#666"> Bilisound </a>
+										&amp; <a href="http://weibo.com/u/2393492311" target="_blank" style="color:#666">SumiMakito</a> </span>
+								</p>
+								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif">
+										<a href="http://weibo.com/u/3660927987" style="color: #666; font-size: 14px;"> Bilisound官方微博 </a>
+								</p>
+								<p>
+										<span style="color: #666; font-size: 12px;">
+										<s> 且用且自重，欢迎吐槽。 </s>
+										</span>
+										</p>
+										<p style="color: #666; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size: 10px;"> Page designed by SumiMakito </p>
+								</p>
+						</div>
+				</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="sizeException" style="display:none;">
+<div id="sizeDivBlock" align="center" style="width:100%;">
+		<div class="container" id="sizeEContainer" style="background-color:transparent;">
+		<h1 id="sizeSlogan" style="font-size:21px; font-family: '文泉驿正黑', '微软雅黑', '黑体'">请调整您的窗口大小，以正常显示网页布局。</h1>
+		</div>
+		</div>
+</div>
+
+
+<div style="display:none">
+		<script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://": " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1000290196'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000290196' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+    </script>
+<script src="js/bootstrap.min.js">
+    </script>
+<script type="text/javascript" language="javascript">
+function optimize(){
+var screenHeight = $(window).height();
+var screenWidth = document.body.offsetWidth;
+var navHeight= document.getElementById("nav").offsetHeight;
+var footerHeight= document.getElementById("footer").offsetHeight;
+var triContainerHeight = screenHeight - navHeight - footerHeight;
+
+var generalHeight = triContainerHeight;
+var generalWidth = generalHeight * (530/1100);
+
+$("img#img-0").height(generalHeight).width(generalWidth);
+
+//$("div#mainDivBlock").width(screenWidth);
+$("div#mainContainer").height(triContainerHeight);
+$("div#sizeEContainer").height(screenHeight);
+
+$("div#intro").height($("div#mainContainer").height());
+var fixPaddingTop = ($("div#mainContainer").height() - $("div#slogan").height() ) * 0.3;
+var fixPaddingBottom = ($("div#mainContainer").height() - $("div#slogan").height() ) * 0.7;
+$("div#intro").css("padding-top",fixPaddingTop).css("padding-bottom",fixPaddingBottom);
+
+var sizePaddingTop = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+var sizePaddingBottom = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+$("div#sizeEContainer").css("padding-top",sizePaddingTop).css("padding-bottom",sizePaddingBottom);
+
+if(screenHeight<((navHeight+footerHeight+$("div#slogan").height())*1.2)){
+		document.getElementById("mainDivBlock").style.display = "none";
+		document.getElementById("footer").style.display = "none";
+		document.getElementById("nav").style.display = "none";
+		document.getElementById("sizeException").style.display = "";
+}
+}
+optimize();
+</script>
+</body>
+</html>

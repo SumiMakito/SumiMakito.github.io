@@ -1,0 +1,366 @@
+
+@media only screen and (min-width: 0px) and (max-width: 1300px) {
+	html, body {
+		margin:0;
+		padding:0;
+		overflow: hidden;
+		/* max-width: 1024px; */
+		font-size: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#header {
+		height: 58px;
+	}
+		#header img#exo_logo {
+			padding-left: 20px;
+		}
+		#header .head-wrap.group,
+		#header .wrap.group {
+			width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#header #back_active {
+			background-size: 85px 70px;
+		}
+		
+		#header nav {
+			left: 322px;
+			width: 693px;
+		}
+		#header nav ul {
+			width: 693px;
+		}
+		#header ul li {
+			width: 85px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+	#what-we-do {
+		background-size: 1280px auto;  
+	}
+		#what-we-do h1 {
+		width: 480px;
+			font-size: 32px;
+			line-height: 34px;
+		}
+		#what-we-do .description {
+			width: 480px;
+		}
+		#what-we-do .description div {
+			clear: both;
+			width: 480px;
+		}
+		
+		#our-method .description {
+			width: 960px;
+			height: 410px;
+			left: 50%;
+			margin-left: -480px;
+			margin-top: -205px;
+			background-size: auto 310px;
+			background-position: 0 100px;
+		}
+		#our-method .description h1 {
+			font-size: 32px;
+			height: 34px; 
+		}
+		#our-method .description div {
+			width: 285px;
+		}
+		#our-method .description  div h2 {
+			font-size: 24px;
+		}
+		#our-method .description div.method1 {
+			padding-left: 60px;
+		}
+		#our-method .description div.method2 {
+			width: 260px;
+			padding-left: 20px;
+		}
+		#our-method .description div.method3 {
+			width: 280px; 
+			margin-left: 55px;
+		}
+		#our-method .description  div.bottom {
+			padding-top: 295px;
+		}
+		#our-method .description  div div.desc_1 {
+			width: 280px;
+		}
+		#our-method .description  div div.desc_2 {
+			width: 260px;
+		}
+		#our-method .description  div div.desc_3 {
+			width: 260px;
+		}
+		#benefits .description span.title, #benefits .description h2,
+		#features .description span.title, #features .description h2,
+		#options .description span.title, #options .description h2 {
+			font-size: 32px;
+			line-height: 32px;
+		}
+		#benefits.sliding ul.slider li div.content,
+		#features.sliding ul.slider li div.content,
+		#options.sliding ul.slider li div.content { font-size: 12px; }
+		
+		#pricing .description {
+			width: 960px;
+			left: 50%;
+			margin-left: -480px;
+		}
+		#pricing .description:after {
+			content: url(../images/pricing-bg2b.png);
+			width: 960px;
+		}
+		#pricing .description .left {
+			width: 240px;
+		}
+		#pricing .description .left h1 {
+			font-size: 32px;
+			line-height: 33px;
+		}
+		#pricing .description .left h1, #pricing .description .left .content, 
+		#pricing .description .left .bottom {
+			width: 183px;
+		}
+		#pricing .description .right {
+			width: 470px;
+		}
+		#pricing .description .right .content {
+			width: 370px;
+		}
+		#pricing .description .right .computers h2, #pricing .description .right .users h2, 
+		#pricing .description .right .servers h2, #pricing .description .right .others h2 {
+			font-size: 14px;
+		}
+		#pricing .description .right .computers #slider-range-computer, #pricing .description .right .users #slider-range-user, 
+		#pricing .description .right .servers #slider-range-server {
+			width: 340px;
+			margin-bottom: 16px;
+		}
+		#pricing .description .right .computers .value, #pricing .description .right .users .value, 
+		#pricing .description .right .servers .value {
+			font-size: 16px;
+			padding-left: 350px;
+			top: 40px;
+			height: 20px;
+		}
+		#pricing .description .right .others ul li {
+			width: 158px;
+			height: 22px;
+		}
+		
+		#pricing .description .total {
+			width: 248px;
+		}
+		#pricing .description .total .content {
+			height: 178px;
+		}
+		
+		#contact .description {
+			width: 960px;
+			margin-left: -480px;
+		}
+		#contact .left {
+			width: 403px;
+			padding-left: 60px;
+		}
+		#contact .right {
+			border-right: solid 1px #d1d1d1;
+			width: 480px;
+		}
+		#contact .right h1, #contact .left h1 { 
+			font-size: 32px;
+			line-height: 32px; 
+		}
+		#contact .bottom {
+			width: 100%;
+		}
+	
+		#contact .bottom #footer-partenaires {
+			width: 960px;
+		}
+		#contact .bottom #footer-partenaires h1 {
+			font-size: 18px; 
+			padding-right: 30px;
+		}
+		#contact .bottom #footer-partenaires img {
+			width: 800px;
+			margin-top: 45px;
+		}
+		
+		#what-we-do .description, #our-method .description, #benefits .description, 
+		#features .description, #options .description, #contact .description {
+			width: 1024px;
+		}
+		#benefits .description, #features .description, #options .description { 
+			left: 50%;
+			margin-left: -512px; 
+		}
+		
+	.carousel > .carousel-inner > .item div.content {
+		width: 420px;
+	}
+	.carousel > .carousel-inner > .item {
+		padding-left: 125px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 960px;
+	}
+	.carousel > .carousel-inner > .item img {
+		width: 315px;
+	}
+	.slider_container ul.slider li div.content {
+		width: 420px;
+	}
+	.next-slide, .prev-slide {
+		width: 50px;
+	}
+	.next-slide {
+		background-position: 0 200px;
+	}
+	.prev-slide {
+		background-position: 36px 200px;
+		left: -100px;
+	}
+	.next-slide.arrow2 {
+		background-position: 0 200px;
+		right: -16px;
+	}
+	.prev-slide.arrow2 {
+		background-position: 36px 200px;
+	}
+
+	.prev-slide {
+		background-position: 34px 200px;
+	}
+	
+	.next-slide:active {
+		background-image: url(../images/right-arrow.png);
+	}
+	.prev-slide:active {
+		background-image: url(../images/left-arrow.png);
+	}
+	.next-slide.arrow2:active {
+		background-image: url(../images/right-arrow2.png);
+	}
+	.prev-slide.arrow2:active {
+		background-image: url(../images/left-arrow2.png);
+	}
+
+	.ui-slider-horizontal { height: 10px;  }
+	.ui-slider-horizontal .ui-slider-range { height: 6px; }
+	.ui-slider .ui-slider-handle { width: 24px; height: 24px; margin-top: -5px; z-index: 20006; }
+	#orientation {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1024px) and (orientation:portrait) {
+	#orientation.fr {
+		background-image: url(../images/flip_fr.png);
+	}
+	#orientation.en {
+		background-image: url(../images/flip_en.png);
+	}
+	
+	#orientation {
+		position: fixed;
+		display: block;
+		background: #000;
+		opacity: 0.9;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		z-index: 999999;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 40px;}
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#what-we-do { height: 480px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 86px 291px; }
+	#what-we-do .next { display: none; }
+	#what-we-do .description { width: 274px; margin: 0; padding: 23px; margin-left: 50%; left: -187px; top: 8px; }
+	#what-we-do .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#what-we-do .description .content { width: 274px; font-size: 12px; }
+	#what-we-do .description .partners { display: none; }
+	#our-method, #benefits, #features, #options, #pricing { width: 320px; display: none; }
+	#contact { position: relative; height: 670px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 86px -191px; background-repeat: no-repeat; }
+	#contact .description { width: 274px; left: 0; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: 50%; left: -187px; }
+	#contact .description .right { border: none; }
+	#contact .description .right h1, #contact .description .left h1 { font-size: 30px; } 
+	#contact .description .right .content, #contact .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#contact .description .right .fb-like { display: none; }
+	#contact .description .right .content .notes, #contact .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#contact .description .right, #contact .description .left { clear: both; width: 274px; margin: 0; padding: 0; }
+	#contact .description .left { padding-top: 40px; }
+	#contact .bottom, #contact .bottom #footer-partenaires { width: 480px; display: none; }
+	.anchorClass, #contact, #what-we-do { min-width: 480px; }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 380px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 0; }
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#what-we-do { height: 480px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 57px 291px; }
+	#what-we-do .next { display: none; }
+	#what-we-do .description { width: 274px; margin: 0; padding: 23px; margin-left: auto; margin-right: auto; left: 34px; top: 8px; }
+	#what-we-do .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#what-we-do .description .content { width: 274px; font-size: 12px; }
+	#what-we-do .description .partners { display: none; }
+	#our-method, #benefits, #features, #options, #pricing { width: 380px; display: none; }
+	#contact { position: relative; height: 670px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 57px -191px; background-repeat: no-repeat; }
+	#contact .description { width: 274px; left: 34px; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: auto; margin-right: auto; }
+	#contact .description .right { border: none; }
+	#contact .description .right h1, #contact .description .left h1 { font-size: 30px; } 
+	#contact .description .right .content, #contact .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#contact .description .right .fb-like { display: none; }
+	#contact .description .right .content .notes, #contact .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#contact .description .right, #contact .description .left { clear: both; width: 286px; margin: 0; padding: 0; }
+	#contact .description .left { padding-top: 40px; }
+	#contact .bottom, #contact .bottom #footer-partenaires { width: 380px; display: none; }
+	.anchorClass, #contact, #what-we-do { min-width: 380px; }
+}
+
+@media only screen and (max-width : 320px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 0; }
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#what-we-do { height: 480px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 23px 291px; }
+	#what-we-do .next { display: none; }
+	#what-we-do .description { width: 274px; margin: 0; padding: 23px; margin-left: auto; margin-right: auto; left: 0; top: 8px; }
+	#what-we-do .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#what-we-do .description .content { width: 274px; font-size: 12px; }
+	#what-we-do .description .partners { display: none; }
+	#our-method, #benefits, #features, #options, #pricing { width: 320px; display: none; }
+	#contact { position: relative; height: 670px; background-image: url(../images/mobile_back.png); background-size: auto 286px; background-position: 23px -191px; background-repeat: no-repeat; }
+	#contact .description { width: 274px; left: 0; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: auto; margin-right: auto; }
+	#contact .description .right { border: none; }
+	#contact .description .right h1, #contact .description .left h1 { font-size: 30px; } 
+	#contact .description .right .content, #contact .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#contact .description .right .fb-like { display: none; }
+	#contact .description .right .content .notes, #contact .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#contact .description .right, #contact .description .left { clear: both; width: 286px; margin: 0; padding: 0; }
+	#contact .description .left { padding-top: 40px; }
+	#contact .bottom, #contact .bottom #footer-partenaires { width: 320px; display: none; }
+	.anchorClass, #contact, #what-we-do { min-width: 320px; }
+}
