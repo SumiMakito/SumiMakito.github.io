@@ -52,9 +52,74 @@ body {
         while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
         return p;
       } ('i 5$=["h","d","d","d"];9 j(){b a};7(g(6["8"]["f"])!=5$[0]){6["8"]["f"]=9(4){7(4["c"]["e"]!=5$[1]){b a}}}k{6["8"]["m"]=9(4){7(4["c"]["e"]!=5$[2]){b a}};6["8"]["l"]=9(4){7(4["c"]["e"]!=5$[3]){b a}}}', 23, 23, '||||O6df86aa|_|window|if|document|function|false|return|target|INPUT|tagName|onselectstart|typeof|undefined|var|f42c8f2c|else|onmouseup|onmousedown'.split('|'), 0, {}))
+	  
+function optimize(){
+var screenHeight = $(window).height();
+var screenWidth = document.body.offsetWidth;
+var navHeight= document.getElementById("nav").offsetHeight;
+var footerHeight= document.getElementById("footer").offsetHeight;
+var triContainerHeight = screenHeight - navHeight - footerHeight;
+
+var generalHeight = triContainerHeight;
+var generalWidth = generalHeight * (530/1100);
+
+$("img#img-0").height(generalHeight).width(generalWidth);
+
+//$("div#mainDivBlock").width(screenWidth);
+$("div#mainContainer").height(triContainerHeight);
+$("div#sizeEContainer").height(screenHeight);
+
+$("div#intro").height($("div#mainContainer").height());
+var fixPaddingTop = ($("div#mainContainer").height() - $("div#slogan").height() ) * 0.3;
+var fixPaddingBottom = ($("div#mainContainer").height() - $("div#slogan").height() ) * 0.7;
+$("div#intro").css("padding-top",fixPaddingTop).css("padding-bottom",fixPaddingBottom);
+
+var sizePaddingTop = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+var sizePaddingBottom = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+$("div#sizeEContainer").css("padding-top",sizePaddingTop).css("padding-bottom",sizePaddingBottom);
+document.getElementById("sizeException").style.display = "none";
+
+}
+function resize(){
+	if(screenWidth>1200){
+	if(screenHeight<((navHeight+footerHeight+$("div#slogan").height())*1.2)){
+		document.getElementById("mainDivBlock").style.display = "none";
+		document.getElementById("footer").style.display = "none";
+		document.getElementById("nav").style.display = "none";
+		document.getElementById("sizeException").style.display = "";
+}else{
+	optimize();
+}
+}
+}
+window.onload=function()
+{
+	document.getElementById("loadingDiv").style.display = "none";
+	document.getElementById("mainContents").style.display = "";
+   optimize();
+}
+	var sizePaddingTop = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+var sizePaddingBottom = ($("div#sizeEContainer").height() - $("div#sizeSlogan").height() ) * 0.5;
+$("div#sizeEContainer").css("padding-top",sizePaddingTop).css("padding-bottom",sizePaddingBottom);
+document.getElementById("mainDivBlock").style.display = "none";
+		document.getElementById("footer").style.display = "none";
+		document.getElementById("nav").style.display = "none";
     </script>
 </head>
-<body onResize="location=location">
+<body onResize="resize();">
+<div id="loadingDiv">
+<div id="" align="center" style="width:100%;padding-top:30px;">
+		<div class="container" id="" style="background-color:transparent;">
+<div class="progress progress-striped progress-bar-success active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+  </div>
+</div>
+		<h1 id="" style="font-size:21px; font-family: '文泉驿正黑', '微软雅黑', '黑体'">努力加载页面中...</h1>
+		<p id="" style="font-size:16px; font-family: '文泉驿正黑', '微软雅黑', '宋体';">进入Bilisound里世界...</p>
+		</div>
+		</div>
+</div>
+<div id="mainContents" style="display:none;">
 <div class="navbar navbar-default navbar-static-top" role="navigation"
     id="nav" style="padding-top:20px;">
 		<div class="container">
@@ -79,7 +144,7 @@ body {
 														<a href="http://weibo.com/u/2393492311" target="_blank"> @SumiMakito </a>
 												</li>
 												<li>
-														<a href="http://weibo.com/u/5048118057" target="_blank"> @站妹 </a>
+														<a href="http://weibo.com/u/5048118057" target="_blank"> @Athlon65X8(DickyT) </a>
 												</li>
 										</ul>
 								</li>
@@ -106,7 +171,15 @@ body {
 <a href="http://www.nicovideo.jp/" style="color:#DEDEDE">ニコニコ動画</a>
 的视频音乐提取</p>
 <hr/>
-<button type="button" class="btn btn-transparent btn-lg btn-block" style="font-family: '文泉驿正黑', '微软雅黑', '黑体'; font-size: 21px;">内测进行中</button>
+<p style="font-family: '文泉驿正黑', '微软雅黑', '宋体'; font-size: 14px;">立即下载</p>
+<div class="row">
+<div class="col-md-6">
+<a class="btn btn-transparent btn-lg btn-block" href="http://as.baidu.com/a/item?docid=6331732" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">百度应用商店</a>
+</div>
+<div class="col-md-6">
+<a class="btn btn-transparent btn-lg btn-block" href="http://www.wandoujia.com/apps/com.bilisound.client" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">豌豆荚</a>
+</div>
+</div>
 </div>
 		</div>
 		<div class="col-md-6">
@@ -126,7 +199,7 @@ body {
 								<p>
 										<span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> ©2014
 										<a href="http://www.bilibili.fm" target="_blank" style="color:#666"> Bilisound </a>
-										&amp; SumiMakito </span>
+										&amp; <a href="http://weibo.com/u/2393492311" target="_blank" style="color:#666">SumiMakito</a> </span>
 								</p>
 								<p>
 										<span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 欢迎提交BUG及反馈建议 </span>
@@ -140,7 +213,7 @@ body {
 								<address style="text-align:center">
 								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> STAFF </p>
 								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 站长/网站运营
-										<a href="http://weibo.com/u/5048118057" target="_blank" style="color:#666"> @站妹 </a>
+										<a href="http://weibo.com/u/5048118057" target="_blank" style="color:#666"> @Athlon65X8(DickyT) </a>
 								</p>
 								<p style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif"> 客户端开发
 										<a href="http://weibo.com/u/2393492311" target="_blank" style="color:#666"> @SumiMakito </a>
@@ -200,7 +273,9 @@ body {
 <a href="http://www.nicovideo.jp/" style="color:#DEDEDE;font-size: 12px;">ニコニコ動画</a>
 的视频音乐提取</p>
 <hr/>
-<button type="button" class="btn btn-transparent btn-lg btn-block" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">内测进行中</button>
+<p style="font-family: '文泉驿正黑', '微软雅黑', '宋体'; font-size: 14px;">立即下载</p>
+<a class="btn btn-transparent btn-lg btn-block" href="http://m.baidu.com/app?action=content&docid=6331732" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">百度应用商店</a>
+<a class="btn btn-transparent btn-lg btn-block" href="http://www.wandoujia.com/apps/com.bilisound.client" style="font-family: '文泉驿正黑', '微软雅黑', '宋体';font-size: 18px;">豌豆荚</a>
 </div>
 		</div>
 		
@@ -244,7 +319,7 @@ body {
 		</div>
 </div>
 
-
+</div>
 <div style="display:none">
 		<script type="text/javascript">
         var cnzz_protocol = (("https:" == document.location.protocol) ? " https://": " http://");
@@ -256,6 +331,11 @@ body {
 <script src="js/bootstrap.min.js">
     </script>
 <script type="text/javascript" language="javascript">
+/*
+window.onload=function()
+{
+   window.onresize=optimize();
+}
 function optimize(){
 var screenHeight = $(window).height();
 var screenWidth = document.body.offsetWidth;
@@ -287,8 +367,11 @@ if(screenHeight<((navHeight+footerHeight+$("div#slogan").height())*1.2)){
 		document.getElementById("nav").style.display = "none";
 		document.getElementById("sizeException").style.display = "";
 }
+if(screenWidth>1200){
+	location=location;
 }
-optimize();
+}
+optimize();*/
 </script>
 </body>
 </html>
