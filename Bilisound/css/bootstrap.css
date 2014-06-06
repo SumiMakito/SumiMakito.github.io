@@ -131,7 +131,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  margin: 0;
+  margin: 5px;
 }
 button,
 input {
@@ -1973,7 +1973,7 @@ fieldset[disabled] .btn {
 .btn-transparent:active,
 .btn-transparent.active,
 .open .dropdown-toggle.btn-transparent {
-  color: rgb(230, 140, 100);
+  color: #00ba9d;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
@@ -2943,7 +2943,7 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   list-style: none;
   font-size: 14px;
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: #f1f1f1;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -2967,19 +2967,19 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #dedede;
+  color: #333333;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #00ba9d;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #ffffff;
+  color: #999999;
   text-decoration: none;
   outline: 0;
   background-color: #428bca;
@@ -3930,42 +3930,44 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: transparent;
+  background-color: #f1f1f1;
   /*#f8f8f8;*/
-  border-color: transparent;
+  border-bottom: 0px solid #ddd;
   /*#e7e7e7;*/
 }
 .navbar-default .navbar-brand {
-    color: #dedede;
+    color: #333333;
     font-family: '文泉驿正黑', '微软雅黑', '宋体';
+	  font-size:14px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ffffff;
+    color: #ffffff;
     font-family: '文泉驿正黑', '微软雅黑', '宋体';
-  background-color: transparent;
+  background-color: #00ba9d;
+  font-size:14px;
 }
 .navbar-default .navbar-text {
-  color: #dedede;
+    color: #333333;
     font-family: '文泉驿正黑', '微软雅黑', '宋体';
-  font-size: 16px;
+  font-size: 14px;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #dedede;
+    color: #333333;
     font-family: '文泉驿正黑', '微软雅黑', '宋体';
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: transparent;
+  background-color: #00ba9d;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   font-family: '文泉驿正黑', '微软雅黑', '宋体';
-  font-size: 16px;
-  color: #e7e7e7;
-  background-color: transparent;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #00ba9d;
   /*#e7e7e7;*/
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -3991,8 +3993,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: transparent;
-  color: #e7e7e7;
+  background-color: #00ac8f;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
