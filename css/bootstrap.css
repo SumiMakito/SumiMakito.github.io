@@ -353,8 +353,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-weight: bold;
   line-height: 1.1;
   color: inherit;
 }
@@ -418,24 +418,28 @@ h1,
 .h1 {
   font-size: 36px;
   color:#FFF;
+  	font-weight:bold;
   text-shadow: 0 0px 8px rgba(0, 0, 0, 0.7);
 }
 h2,
 .h2 {
   font-size: 26px;
   color:#FFF;
+  	font-weight:bold;
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.7);
 }
 h3,
 .h3 {
   font-size: 22px;
     color:#666;
+	font-weight:bold;
   text-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
 }
 h4,
 .h4 {
   font-size: 18px;
   color:#666;
+  	font-weight:bold;
   text-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
 }
 h5,
