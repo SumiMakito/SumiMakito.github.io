@@ -421,15 +421,24 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 26px;
+  color:#FFF;
+  font-family: '文泉驿正黑', '微软雅黑', '黑体';
+  text-shadow: 0 0px 6px rgba(0, 0, 0, 0.7);
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 22px;
+    color:#666;
+  font-family: '文泉驿正黑', '微软雅黑', '黑体';
+  text-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
 }
 h4,
 .h4 {
   font-size: 18px;
+  color:#666;
+  font-family: '文泉驿正黑', '微软雅黑', '黑体';
+  text-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
 }
 h5,
 .h5 {
@@ -4902,6 +4911,8 @@ a.list-group-item.active:focus .list-group-item-text {
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #DEDEDE;
   border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+	  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   /*
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
