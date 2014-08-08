@@ -42,7 +42,7 @@ body {
 </style></head>
 <body>
 <div class="container" align="center" style="padding-top:25px; padding-bottom:10px;">
-<div id="alert-mobile-bg-disabled" class="alert alert-info fade in" role="alert">当前使用移动设备访问，背景图片已禁用<button type="button" class="close fade" data-dismiss="alert">
+<div id="alert-mobile-bg-disabled" class="alert alert-info fade in" role="alert" style="display:none;">当前使用移动设备访问，背景图片已禁用<button type="button" class="close fade" data-dismiss="alert">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
 </button></div>
@@ -69,9 +69,9 @@ var screenWidth =  $(window).width();
 if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iOS|iPad|Backerry| WebOS|Symbian|Windows Phone|Phone)/i))) { 
    document.body.style.backgroundColor="#F5E8BC";
    document.getElementById("footer-illust-copyright").style.display='none';
+   	   document.getElementById("alert-mobile-bg-disabled").style.display='block';
 }else{ 
     document.body.style.backgroundImage="url('http://ww2.sinaimg.cn/large/8ea9cb57tw1ej4i459gp8j21hc171aob.jpg')";
-	   document.getElementById("alert-mobile-bg-disabled").style.display='none';
 } 
 </script>
 </body>
