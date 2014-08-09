@@ -353,7 +353,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+font-family: "Helvetica Neue", Helvetica, Hiragino Sans GB, sans-serif;
   font-weight: bold;
   line-height: 1.1;
   color: inherit;
@@ -454,7 +454,7 @@ p {
   margin: 0 0 10px;
   color:#666;
   font-size:20px;
-font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+font-family: "Helvetica Neue", Helvetica, Hiragino Sans GB, sans-serif;
   text-shadow: 0 0px 5px rgba(255, 255, 255, 1.0);
 }
 .lead {
