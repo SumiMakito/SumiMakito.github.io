@@ -266,7 +266,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -283,7 +283,7 @@ textarea {
 a {
   color: #FCFCFC;
   text-decoration: none;
-  text-shadow: 0 0px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
 }
 a:hover,
 a:focus {
@@ -353,10 +353,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-font-family: "Helvetica Neue", Helvetica, Hiragino Sans GB, sans-serif;
-  font-weight: bold;
+font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   line-height: 1.1;
   color: inherit;
+  font-weight:normal;
 }
 h1 small,
 h2 small,
@@ -418,28 +418,28 @@ h1,
 .h1 {
   font-size: 36px;
   color:#FFF;
-  	font-weight:bold;
+
   text-shadow: 0 0px 8px rgba(0, 0, 0, 0.7);
 }
 h2,
 .h2 {
   font-size: 30px;
   color:#666;
-  	font-weight:bold;
+
   text-shadow: 0 0px 8px rgba(255, 255, 255, 1.0);
 }
 h3,
 .h3 {
   font-size: 24px;
     color:#666;
-	font-weight:bold;
+
   text-shadow: 0 0px 6px rgba(255, 255, 255, 1.0);
 }
 h4,
 .h4 {
   font-size: 18px;
   color:#666;
-  	font-weight:bold;
+
   text-shadow: 0 0px 5px rgba(255, 255, 255, 1.0);
 }
 h5,
@@ -454,8 +454,8 @@ p {
   margin: 0 0 10px;
   color:#666;
   font-size:20px;
-font-family: "Helvetica Neue", Helvetica, Hiragino Sans GB, sans-serif;
-  text-shadow: 0 0px 5px rgba(255, 255, 255, 1.0);
+font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+text-shadow: 0 0px 5px rgba(255, 255, 255, 1.0);
 }
 .lead {
   margin-bottom: 20px;
