@@ -27,26 +27,26 @@ Makito loves you.
 	<script src="./js/mkto.js"></script>	
   </head>
 
-  <body onload="setTimeout(function(){optimize();}, 1000);" style="padding-top:15px;">
+  <body onload="setTimeout(function() {optimize();}, 1000);" style="padding-top:15px;">
 	<p id="preload" align="center" style="margin-top:50px;font-size:22px;">Please wait...<br/>頁面讀入中...<br/>お待ちください...<br/><span style="font-size:15px;">若長時間未完成讀取，請嘗試刷新頁面。</span></p>
 	<div class="container">
 	  <div class="hidden-xs" align="center" id="main" style="opacity:0;">
         <h3>
-		  <strong>If I am chosen to be a function,</strong>
+		  <strong>If I am chosen to be a <a style="color:#333;text-decoration:underline;" data-html="true" data-toggle="tooltip" data-placement="top" title="<i>n.</i>函数">function</a>,</strong>
 		</h3>
 		<p class="mkto-subtitle"><strong>I wish I could be ...</strong><br/></p>
-		<p style="font-size:26px;font-family: 'Merriweather', serif;font-style:italic;"><strong>f(x)=e<sup>x</sup></strong></p>
-		<p class="mkto-subtitle">... which will never change after derivation.</p>
+		<p style="font-size:26px;font-family: 'Merriweather', serif;font-style:italic;" id="ex"><strong>f(x)=e<sup>x</sup></strong></p>
+		<p class="mkto-subtitle">... which will never change after <a style="color:#666;text-decoration:underline;" data-html="true" data-toggle="tooltip" data-placement="bottom" title="<i>n.</i>求导数">derivation</a>.</p>
 	  </div>
     </div>
 
 	<div class="visible-xs" align="center" id="main-xs" style="opacity:0;">
 	  <h5>
-		<strong>If I am chosen to be a function,</strong>
+		<strong>If I am chosen to be a <a style="color:#333;text-decoration:underline;" data-html="true" data-toggle="tooltip" data-placement="top" title="<i>n.</i>函数">function</a>,</strong>
 	  </h5>
 	  <p class="mkto-subtitle-xs" style="font-size:16px;"><strong>I wish I could be ...</strong><br/></p>
-	  <p style="font-size:22px;font-family: 'Merriweather', serif;font-style:italic;"><strong>f(x)=e<sup>x</sup></strong></p>
-	  <p class="mkto-subtitle-xs" style="font-size:16px;">... which will never change after derivation.</p>
+	  <p style="font-size:22px;font-family: 'Merriweather', serif;font-style:italic;" id="ex"><strong>f(x)=e<sup>x</sup></strong></p>
+	  <p class="mkto-subtitle-xs" style="font-size:16px;">... which will never change after <a style="color:#666;text-decoration:underline;" data-html="true" data-toggle="tooltip" data-placement="bottom" title="<i>n.</i>求导数">derivation</a>.</p>
 	</div>
 
     <div class="container" id="footer" style="opacity:0;">  
@@ -57,9 +57,8 @@ Makito loves you.
 		</strong>
 		loves 
 		<strong>
-		  You
+		  <a style="color:#666;text-decoration:underline;" data-html="true" data-toggle="tooltip" data-placement="right" title="<span style='font-family: Philosopher, serif;'>Sweet as syrup.</span>">You</a>.
 		</strong>
-		.
 	  </p>
     </div>
 <script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js">
@@ -67,6 +66,12 @@ Makito loves you.
 <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js">
 </script>
 <script src="./js/bootswatch.js">
+</script>
+<script>
+$(document).ready(function() {
+					  $('[data-toggle="tooltip"]').tooltip(); 
+					  spawn();
+				  });
 </script>
   </body>
 
