@@ -4,7 +4,7 @@
   "blog_subtitle":"代码如诗、文章、艺术品、人生。——总之就是Abstract。",
   "blog_copyright":"",
   "blog_summary_limit":100,
-  "blog_posts_per_page":20,
+  "blog_posts_per_page":8,
   "blog_extra_pages":[
     {"title":"作品","target":"works.html"},
     {"title":"关于","target":"about.html"}
