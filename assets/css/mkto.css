@@ -7,7 +7,7 @@
 }
 
 p,h1,h2,h3,h4,h5,h6,div{
-	font-family: "Philosopher", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
 }
 
 a,a:hover{
@@ -58,7 +58,7 @@ table,tr,td{
 	font-size: 14px;
 	padding-bottom: 30px;
 	color: black;
-	font-family: "Philosopher", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
 }
 
 .btn-default{
@@ -75,13 +75,13 @@ table,tr,td{
 
 .mkto-big-link{
 	font-size: 19px;
-	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: black;
 }
 
 .mkto-big-link:hover{
 	font-size: 19px;
-	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #555555;
 }
 
