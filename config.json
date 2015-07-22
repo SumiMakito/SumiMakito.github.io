@@ -6,8 +6,8 @@
   "blog_summary_limit":100,
   "blog_posts_per_page":8,
   "blog_extra_pages":[
-    {"title":"作品","target":"works.html"},
-    {"title":"关于","target":"about.html"}
+    {"title":"新浪微博","target":"http://weibo.com/u/2393492311"},
+    {"title":"GitHub","target":"https://github.com/sumimakito"}
   ],
   "disqus_id":"keepmoe"
 }
