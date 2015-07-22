@@ -1,0 +1,106 @@
+/*
+	override
+*/
+
+.container{
+	max-width: 960px;
+}
+
+p,h1,h2,h3,h4,h5,h6,div{
+	font-family: "Merriweather", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
+}
+
+a,a:hover{
+	text-decoration: none;
+}
+
+/*
+	custom
+*/
+
+.blog-section{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.blog-title{
+	font-weight: bold;
+}
+
+table,tr,td{
+	font-size: 13px;
+}
+
+.mkto-navbar{
+	color: #999;
+	font-size: 15px;
+}
+
+.mkto-a{
+	color: #999;
+}
+
+.mkto-a:hover{
+	color: #000;
+}
+
+.mkto-section{
+	padding: 25px;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	color: white;
+}
+
+.mkto-footer-section{
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: left;
+	font-size: 14px;
+	padding-bottom: 30px;
+	color: black;
+	font-family: "Philosopher", "Helvetica Neue","Microsoft YaHei", "宋体", Helvetica, Arial, sans-serif;
+}
+
+.btn-default{
+	border-color: #fff;
+	background-color: transparent;
+	color: white;
+}
+
+.btn-default:hover{
+	border-color: #DDD;
+	background-color: transparent;
+	color: #DDD;
+}
+
+.mkto-big-link{
+	font-size: 19px;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+.mkto-big-link:hover{
+	font-size: 19px;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #555555;
+}
+
+.mkto-blog-post-ctrl-bar{
+	text-align: right;
+}
+
+.mkto-blog-post-section{
+	color: #777;
+}
+
+.mkto-blog-post-section:hover{
+	color: #333;
+}
+
+.mkto-blog-post-summary{
+	font-size: 15px;
+}
+
+.mkto-dotted-hr{
+    border-top:1px dotted #CCC;
+}
