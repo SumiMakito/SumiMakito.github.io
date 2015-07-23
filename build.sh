@@ -1,5 +1,5 @@
 wget http://static.keep.moe/Crystal.py
-python Crystal.py build https://github.com/SumiMakito/SumiMakito.github.io.git ./
+python Crystal.py build https://github.com/SumiMakito/SumiMakito.github.io.git --output=./
 #find
 #cp -rf /tmp/crystal_tmp/dist/* ./
 cd ./crystal_dist
