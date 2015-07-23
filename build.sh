@@ -1,5 +1,6 @@
 wget http://static.keep.moe/Crystal.py
 python Crystal.py generate https://github.com/SumiMakito/SumiMakito.github.io.git ./
+find
 cp -rf /tmp/crystal_tmp/dist/* ./
 git init
 git config --global push.default matching
