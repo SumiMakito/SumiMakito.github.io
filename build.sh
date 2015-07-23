@@ -6,7 +6,7 @@ cd ./crystal_dist
 rm -rf ./.git
 git init
 git config --global push.default matching
-git config --global user.email "sumimaito@hotmail.com"
+git config --global user.email "sumimakito@hotmail.com"
 git config --global user.name "SumiMakito"
 git add --all .
 git commit -m "Crystal Auto Builder"
