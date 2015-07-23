@@ -5,4 +5,4 @@ git config --global user.email "sumimaito@hotmail.com"
 git config --global user.name "SumiMakito"
 git add --all .
 git commit -m "Crystal Auto Builder"
-git push --quiet https://${GitHubKEY}@github.com/SumiMakito/SumiMakito.github.io.git
+git push --quiet --force https://${GitHubKEY}@github.com/SumiMakito/SumiMakito.github.io.git
