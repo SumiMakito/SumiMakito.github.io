@@ -83,4 +83,61 @@ npm install
 
 ![生成Token](http://internal-static.keep.moe/hexo-and-travis-ci/05.03.png)
 
+最后，我们还需要[生成随机字符串](https://www.random.org/strings/?num=10&len=20&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)，并在其中选择一行随机字符串，为下文备用。
+
 ### 0x06 配置Travis CI
+
+首先在Travis CI中找到已经启用自动构建的仓库，并在右侧找到设置按钮。
+
+![设置按钮](http://internal-static.keep.moe/hexo-and-travis-ci/06.00.png)
+
+有两处需要设置，首先需要启用 <code>Build only if .travis.yml is present</code> 选项，以避免 <code>master</code> 分支被构建和陷入构建循环的问题。
+
+另外，在下方的环境变量设置处，我们需要设置两组变量，并注意保持 <code>Display value in build log</code> 禁用，以免构建日志泄露Token等信息。
+
+```
+#需要设置的两组变量
+GitHubKEY = 上文生成的GitHub Personal Access Token
+NOTIFY_TOKEN = 上文生成的随机字符串
+```
+
+![设置页面](http://internal-static.keep.moe/hexo-and-travis-ci/06.01.png)
+
+在每次Push后，Travis CI将检查分支下的 <code>.travis.yml</code> 文件，并以此作为配置进行构建。
+
+下面是我所使用的 <code>.travis.yml</code> :
+
+```yaml
+language: node_js
+node_js:
+  - "0.12"
+install:
+  - npm install hexo-cli -g
+  - npm install hexo --save
+  - npm install
+script:
+  - chmod +x ./build.sh
+  - ./build.sh > /dev/null
+branches:
+  only:
+    - raw
+```
+
+有关于Travis CI配置的详细解释可以查阅[官方文档](http://docs.travis-ci.com/)
+
+在这里，配置文件限制了自动构建工作只会在 <code>raw</code> 分支下进行。
+
+可能你已经发现配置中的 <code>build.sh</code> 了，我们接下来就介绍一下这个文件。
+
+```bash
+hexo generate #生成静态整站
+cd ./public #生成的静态页面会存储在public目录下
+git init
+git config --global push.default matching
+git config --global user.email "username@example.com" #填入GitHub的邮箱地址
+git config --global user.name "username" #填入GitHub的用户名
+git add --all .
+git commit -m "Travis CI Auto Builder" #自动构建后的内容将全部以此信息提交
+git push --quiet --force https://${GitHubKEY}@github.com/你的GitHub用户名/你的代码仓库名.git master  #自动构建后的内容将全部以此信息提交
+curl --connect-timeout 20 --max-time 30 -s http://服务器/webhook.php?_=${NOTIFY_TOKEN} > /dev/null #服务器Webhook 将在下文介绍
+```
