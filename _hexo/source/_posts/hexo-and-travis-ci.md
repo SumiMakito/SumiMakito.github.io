@@ -17,6 +17,8 @@ Hexo是一个基于Node.js的博客框架，从模板、主题再到插件应有
 
 为什么不把GitHub的强大版本控制功能与个人服务器的访问速度结合在一起呢？
 
+<!-- more -->
+
 ### 注意
 
 本教程并不是为初学者准备的，因为其需要的步骤较多且较复杂，需要读者有使用Git及GitHub的经验，并了解PHP及Bash。
@@ -143,5 +145,11 @@ git config --global user.name "username" #填入GitHub的用户名
 git add --all .
 git commit -m "Travis CI Auto Builder" #自动构建后的内容将全部以此信息提交
 git push --quiet --force https://${GitHubKEY}@github.com/你的GitHub用户名/你的代码仓库名.git master  #自动构建后的内容将全部以此信息提交
-curl --connect-timeout 20 --max-time 30 -s http://服务器/webhook.php?_=${NOTIFY_TOKEN} #服务器Webhook 将在下文介绍
+curl --connect-timeout 20 --max-time 30 -s http://远端服务器URL/webhook.php?_=${NOTIFY_TOKEN} #服务器Webhook 将在下文介绍
 ```
+
+### 0x07 远端服务器的配置
+
+到这里，大部分的工作都完成了，我们只需要配置远端服务器就可以了。
+
+由于我们
