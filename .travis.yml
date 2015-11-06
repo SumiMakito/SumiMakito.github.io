@@ -10,7 +10,7 @@ install:
 # command to run tests
 script:
   - chmod +x ../build.sh
-  - ../build.sh
+  - ../build.sh > /dev/null
 branches:
   only:
     - raw
