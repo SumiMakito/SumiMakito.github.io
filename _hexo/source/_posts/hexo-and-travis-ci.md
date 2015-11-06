@@ -19,11 +19,13 @@ Hexo是一个基于Node.js的博客框架，从模板、主题再到插件应有
 
 ### 0x00 新的开始
 
-新建一个代码仓库，我们暂且取名为 ```HexoBlog``` 好了。
+新建一个代码仓库，我们暂且取名为 <code>HexoBlog</code> 好了。
 
 ### 0x01 Clone到本地
 
-```git clone <仓库克隆URL>```
+```
+git clone <仓库克隆URL>
+```
 
 ### 0x02 安装Node.js
 
