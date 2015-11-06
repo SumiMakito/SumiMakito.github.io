@@ -47,6 +47,8 @@ hexo init
 npm install
 ```
 
+> 若 <code>NPM</code> 出现无法连接的问题，可以尝试[更换淘宝开源NPM镜像服务器](http://npm.taobao.org/)
+
 接下来我们可以看到仓库中的文件结构
 
 ![文件结构](http://internal-static.keep.moe/hexo-and-travis-ci/03.00.png)
@@ -76,3 +78,9 @@ npm install
 需要为新的Token输入一个名字，这里我们就填入 <code>Travis CI</code> 好了。
 
 ![Generate new token](http://internal-static.keep.moe/hexo-and-travis-ci/05.02.png)
+
+确定生成后，Token将显示在页面上，此时需要将其复制并保存好，并避免泄露。遗忘Token后不能找回，只能重新生成。
+
+![生成Token](http://internal-static.keep.moe/hexo-and-travis-ci/05.03.png)
+
+### 0x06 配置Travis CI
