@@ -9,7 +9,7 @@ install:
   - npm install
 # command to run tests
 script:
-  - chmod +x ./build.sh
+  - chmod +x ../build.sh
   - ../build.sh
 branches:
   only:
