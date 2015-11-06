@@ -152,4 +152,6 @@ curl --connect-timeout 20 --max-time 30 -s http://远端服务器URL/webhook.php
 
 到这里，大部分的工作都完成了，我们只需要配置远端服务器就可以了。
 
-由于我们
+远端服务器所需要做的工作便是将构建好的内容同步到本地，在这之前，我们每次提交到 <code>raw</code> 分支的新文章会被Travis CI取得并生成整站，再由Travis CI将整站Push回 <code>master</code> 分支。
+
+因此我们只需要通知远端服务器Clone一下 <code>master</code> 分支就可以了。
