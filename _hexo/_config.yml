@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: "Makito的笔记本"
+subtitle: "代码如诗、文章、艺术品、人生。——总之就是Abstract。"
 description:
-author: John Doe
-language:
+author: "Sumi Makito"
+language: zh
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.keep.moe/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

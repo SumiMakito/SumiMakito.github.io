@@ -1,37 +1,7 @@
-title: Hello World
+title: Hello, world!
+date: 2014-11-03 23:10:35
+tags:
 ---
-Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](http://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](http://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](http://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](http://hexo.io/docs/deployment.html)
+一年前实验性的买了2.99USD/年的.info域名(<del>szumi.info</del>)，它实在过于垃圾以至于我都不愿提起，最终也因续不起费也不想续费而告终。
+今天终于在Hostker注册到了一个好域名(至少我认为还不错)，价格还可以接受，95CNY/年，以后就用它了，新家就在这里。
+你好，我是Makito。
