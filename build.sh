@@ -7,4 +7,4 @@ git config --global user.name "SumiMakito"
 git add --all .
 git commit -m "Travis CI Auto Builder"
 git push --quiet --force https://${GitHubKEY}@github.com/SumiMakito/SumiMakito.github.io.git master
-curl -s http://cloud.keep.moe/webhook/blog.keep.moe.php?_=${NOTIFY_TOKEN} > /dev/null
+curl --connect-timeout 20 --max-time 30 -s http://cloud.keep.moe/webhook/blog.keep.moe.php?_=${NOTIFY_TOKEN} > /dev/null
