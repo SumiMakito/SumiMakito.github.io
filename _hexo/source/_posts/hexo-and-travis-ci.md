@@ -1,6 +1,9 @@
 title: 配合Travis CI，将Hexo博客自动部署到你的服务器上。
 date: 2015-11-06 17:30:39
 tags:
+- Travis CI
+- Hexo
+- 静态博客
 ---
 
 > 这篇教程将指导你如何将写好的文章通过Git提交至GitHub仓库，并使用Travis CI自动构建、部署到你的服务器上。
@@ -46,7 +49,7 @@ Node.js的版本仍在不断更新中，请至[项目下载页](https://nodejs.o
 
 ### 0x03 安装Hexo
 
-```
+```bash
 cd ./HexoBlog #进入刚Clone的仓库目录
 npm install hexo-cli -g
 hexo init
@@ -155,3 +158,56 @@ curl --connect-timeout 20 --max-time 30 -s http://远端服务器URL/webhook.php
 远端服务器所需要做的工作便是将构建好的内容同步到本地，在这之前，我们每次提交到 <code>raw</code> 分支的新文章会被Travis CI取得并生成整站，再由Travis CI将整站Push回 <code>master</code> 分支。
 
 因此我们只需要通知远端服务器Clone一下 <code>master</code> 分支就可以了。
+
+首先我们在服务器上新建一个Bash文件，我使用的是VPS，因此以保存在 <code>/home/sync_blog.sh</code> 为例。
+
+文件内容如下：
+
+```bash
+cd /var/www/blog/ #进入网站的根目录 假设blog文件夹是blog子域名的根目录
+rm -rf ./* > /dev/null #清理上次的文件
+rm -rf ./.* > /dev/null #清理上次的文件
+git clone --depth=50 --branch=master https://github.com/SumiMakito/SumiMakito.github.io.git ./ #从master分支Clone
+```
+
+下一步，创建一个用PHP实现的类似于Webhook的接口，<del>为什么选择PHP？因为它是最好的语言啊！</del>很简单，代码如下：
+
+```php
+<?php
+if($_GET['_']=="上文的随机字符串"){
+	shell_exec("/home/sync_blog.sh > /dev/null");
+	print("Done!");
+}else{
+	die("Invalid token!");
+}
+?>
+```
+
+假设这个PHP页面可以从 <code>http://www.example.com/webhook.php</code> 访问到，那么上文中 <code>build.sh</code> 中的最后一行就可以改成：
+
+```bash
+curl --connect-timeout 20 --max-time 30 -s http://www.example.com/webhook.php?_=${NOTIFY_TOKEN} #服务器Webhook 将在下文介绍
+```
+
+### 0x08 测试
+
+99%完成，只欠测试。
+
+还记得之前的 <code>HexoBlog</code> 文件夹吗？
+
+```bash
+cd ./HexoBlog
+hexo new hello-ci
+vim ./source/_posts/hello-ci.md
+git add --all .
+git commit -m "Hello, CI!"
+git push
+```
+
+### 结语
+
+这篇教程稍麻烦一些，但是也能帮助你了解Travis CI是如何简单配置并工作的。
+
+在本地也可以生成整站，但这种方案对于本地无法安装Node.js的用户来说很是方便。
+
+少看视频教程多写代码，比什么都好。
