@@ -17,6 +17,8 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
+duoshuo_shortname: blogkeepmoe
+
 # Directory
 source_dir: source
 public_dir: public

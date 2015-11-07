@@ -1,6 +1,8 @@
 title: Openshift下使用NPM时出现EACCESS错误的解决办法
 date: 2015-11-05 23:44:37
 tags:
+- Openshift
+- EACCESS
 ---
 <p>Npm是Node.js的包管理器，有时安装一些新模块都需要依靠npm install这个命令，但在Openshift这种限制多多的环境下，直接使用npm install这种命令安装模块可能会遇到各种错误，常见的就是本文所说的EACCESS错误。</p>
 
