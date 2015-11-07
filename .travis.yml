@@ -6,6 +6,7 @@ install:
   - cd ./_hexo
   - npm install hexo-cli -g
   - npm install hexo --save
+  - npm install hexo-generator-feed --save
   - npm install
 # command to run tests
 script:
