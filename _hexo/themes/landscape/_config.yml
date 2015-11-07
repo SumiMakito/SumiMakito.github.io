@@ -16,7 +16,12 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+- links
 
+links: #友情链接
+  - Starduster 星尘独奏曲: http://www.starduster.me/
+  - ChinaMoe's Blog: http://blog.moeloader.com/
+  
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
