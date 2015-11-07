@@ -1,17 +1,7 @@
-<% if (theme.links && theme.links.length > 0) { %>
 <div class="widget tag">
   <h3 class="title">友情链接</h3>
   <ul class="entry">
-  <% theme.blogrolls.forEach(function(item){ %>
-    <%
-      var description, linkURL
-      for (var tmp in item) {
-        description = tmp;
-        linkURL = item[tmp];
-      }
-    %>
-    <li><a href="<%- linkURL %>" target="_blank"><%= description %></a></li>
-  <% }); %>
+    <li><a href="http://www.starduster.me/" target="_blank">Starduster 星尘独奏曲</a></li>
+    <li><a href="http://blog.moeloader.com/" target="_blank">ChinaMoe's Blog</a></li>
   </ul>
 </div>
-<% } %>
