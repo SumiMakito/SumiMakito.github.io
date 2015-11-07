@@ -197,7 +197,7 @@ curl --connect-timeout 20 --max-time 30 -s http://www.example.com/webhook.php?_=
 
 ```bash
 cd ./HexoBlog
-hexo new hello-ci
+hexo new hello-ci #本地没有Hexo的话可以直接跳过这一步
 vim ./source/_posts/hello-ci.md
 git add --all .
 git commit -m "Hello, CI!"
@@ -208,6 +208,4 @@ git push
 
 这篇教程稍麻烦一些，但是也能帮助你了解Travis CI是如何简单配置并工作的。
 
-在本地也可以生成整站，但这种方案对于本地无法安装Node.js的用户来说很是方便。
-
-少看视频教程多写代码，比什么都好。
+在本地也可以生成整站，但这种方案对于本地无法安装Node.js及Hexo的用户来说很是方便。
