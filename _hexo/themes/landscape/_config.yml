@@ -16,7 +16,6 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
-- weibo_show
 - links
 
 # Miscellaneous
