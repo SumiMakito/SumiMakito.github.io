@@ -1,14 +1,12 @@
 language: node_js
 node_js:
   - "0.12"
-# command to install dependencies
 install:
   - cd ./_hexo
   - npm install hexo-cli -g
   - npm install hexo --save
   - npm install hexo-generator-feed --save
   - npm install
-# command to run tests
 script:
   - chmod +x ../build.sh
   - ../build.sh > /dev/null
