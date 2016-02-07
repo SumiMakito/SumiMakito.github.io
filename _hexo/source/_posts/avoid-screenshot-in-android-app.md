@@ -21,13 +21,13 @@ public class TestActivity extends Activity {
 }
 ```
 ### 0x01 实机测试
-![直接截图](http://internal-static.keep.moe/avoid-screenshot-in-android-app/00.00.png)
+![直接截图](http://internal-static.keep.moe/blog.keep.moe/20151123_avoid-screenshot-in-android-app/00.00.png)
 无法通过物理组合键截图
-![通过ADB截图](http://internal-static.keep.moe/avoid-screenshot-in-android-app/00.01.png)
-![通过Dump View Hierarchy截图](http://internal-static.keep.moe/avoid-screenshot-in-android-app/00.02.png)
-![通过Dump View Hierarchy截图](http://internal-static.keep.moe/avoid-screenshot-in-android-app/00.03.png)
+![通过ADB截图](http://internal-static.keep.moe/blog.keep.moe/20151123_avoid-screenshot-in-android-app/00.01.png)
+![通过Dump View Hierarchy截图](http://internal-static.keep.moe/blog.keep.moe/20151123_avoid-screenshot-in-android-app/00.02.png)
+![通过Dump View Hierarchy截图](http://internal-static.keep.moe/blog.keep.moe/20151123_avoid-screenshot-in-android-app/00.03.png)
 无法使用开发工具截图
-![通过Shell强行截图](http://internal-static.keep.moe/avoid-screenshot-in-android-app/00.04.png)
+![通过Shell强行截图](http://internal-static.keep.moe/blog.keep.moe/20151123_avoid-screenshot-in-android-app/00.04.png)
 通过Shell强行截图成功 但输出的截图文件除StatusBar含有不规则的像素外几乎为全透明
 
 ### 0x02 结语

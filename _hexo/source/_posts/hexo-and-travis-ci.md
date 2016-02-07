@@ -43,7 +43,7 @@ Node.js的版本仍在不断更新中，请至[项目下载页](https://nodejs.o
 
 安装包自带包管理器NPM。
 
-![Node.js与NPM的版本](http://internal-static.keep.moe/hexo-and-travis-ci/02.00.png)
+![Node.js与NPM的版本](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/02.00.png)
 
 安装后可以在Terminal中查询Node.js与NPM的版本。
 
@@ -60,37 +60,37 @@ npm install
 
 接下来我们可以看到仓库中的文件结构
 
-![文件结构](http://internal-static.keep.moe/hexo-and-travis-ci/03.00.png)
+![文件结构](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/03.00.png)
 
 ### 0x04 使用Travis CI
 
 首先我们先打开[Travis CI](https://travis-ci.org/)，可以在右上角找到使用GitHub登陆的按钮。
 
-![Travis CI首页](http://internal-static.keep.moe/hexo-and-travis-ci/04.00.png)
+![Travis CI首页](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/04.00.png)
 
 授权完成后，你可以在左上角找到My Repositories一旁的加号“+”，点击它，它就会列出你所有的仓库，你只需要找到刚才的 <code>HexoBlog</code> 并把它左侧的开关打开就可以了。
 
-![添加仓库](http://internal-static.keep.moe/hexo-and-travis-ci/04.01.png)
+![添加仓库](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/04.01.png)
 
-![选择仓库](http://internal-static.keep.moe/hexo-and-travis-ci/04.02.png)
+![选择仓库](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/04.02.png)
 
 ### 0x05 生成GitHub Personal Access Token
 
 登录GitHub，在右上角头像处进入设置。
 
-![进入设置](http://internal-static.keep.moe/hexo-and-travis-ci/05.00.png)
+![进入设置](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/05.00.png)
 
 在左侧找到 <code>Personal access tokens</code>，并点击右上角的 <code>Generate new token</code>。
 
-![Personal access tokens](http://internal-static.keep.moe/hexo-and-travis-ci/05.01.png)
+![Personal access tokens](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/05.01.png)
 
 需要为新的Token输入一个名字，这里我们就填入 <code>Travis CI</code> 好了。
 
-![Generate new token](http://internal-static.keep.moe/hexo-and-travis-ci/05.02.png)
+![Generate new token](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/05.02.png)
 
 确定生成后，Token将显示在页面上，此时需要将其复制并保存好，并避免泄露。遗忘Token后不能找回，只能重新生成。
 
-![生成Token](http://internal-static.keep.moe/hexo-and-travis-ci/05.03.png)
+![生成Token](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/05.03.png)
 
 最后，我们还需要[生成随机字符串](https://www.random.org/strings/?num=10&len=20&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)，并在其中选择一行随机字符串，为下文备用。
 
@@ -98,7 +98,7 @@ npm install
 
 首先在Travis CI中找到已经启用自动构建的仓库，并在右侧找到设置按钮。
 
-![设置按钮](http://internal-static.keep.moe/hexo-and-travis-ci/06.00.png)
+![设置按钮](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/06.00.png)
 
 有两处需要设置，首先需要启用 <code>Build only if .travis.yml is present</code> 选项，以避免 <code>master</code> 分支被构建和陷入构建循环的问题。
 
@@ -110,7 +110,7 @@ GitHubKEY = 上文生成的GitHub Personal Access Token
 NOTIFY_TOKEN = 上文生成的随机字符串
 ```
 
-![设置页面](http://internal-static.keep.moe/hexo-and-travis-ci/06.01.png)
+![设置页面](http://internal-static.keep.moe/blog.keep.moe/20151106_hexo-and-travis-ci/06.01.png)
 
 在每次Push后，Travis CI将检查分支下的 <code>.travis.yml</code> 文件，并以此作为配置进行构建。
 

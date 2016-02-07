@@ -4,7 +4,7 @@ tags:
 - Android
 - 游戏开发
 - SurfaceView
-－ OpenGL
+- OpenGL
 ---
 在大部分Android游戏中，游戏画面的更新都是通过单独线程来完成的，若是直接在主线程上绘制，可能会造成无响应(ANR)等问题，因此需要在单独线程中完成绘图。
 
