@@ -1,11 +1,15 @@
 <div class="copyright" >
   {% set current = date(Date.now(), "YYYY") %}
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
-  <span itemprop="copyrightYear">{{ current }}</span>
+  <span itemprop="copyrightYear">2014-{{ current }}</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+</div>
+
+<div class="copyright" >
+  <span class="author" itemprop="copyrightHolder">若未特殊注明，则为原创内容。使用时请遵守<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>协议。</span>
 </div>
 
 <div class="powered-by">

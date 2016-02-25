@@ -1,4 +1,7 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
+
+avatar: "http://ww1.sinaimg.cn/large/8ea9cb57jw1f1c1svo1qvj20e80e8wr6.jpg"
+
 menu:
   home: /
   #categories: /categories
@@ -28,7 +31,7 @@ menu_icons:
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo,next"
+keywords: "Makito, SumiMakito, Sumi Makito, Keep.moe, Keepmoe, Makito的笔记本, 开发, 编程技术, IT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
