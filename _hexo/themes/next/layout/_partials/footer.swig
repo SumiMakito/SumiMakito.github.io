@@ -23,14 +23,4 @@
   </a>
 </div>
 
-{% if theme.use_font_lato %}
-<script type="text/javascript">
-  {% if config.language === 'zh-Hans' %}
-    loadCSS('//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext');
-  {% else %}
-    loadCSS('//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext');
-  {% endif %}
-</script>
-{% endif %}
-
 {% block footer %}{% endblock %}
