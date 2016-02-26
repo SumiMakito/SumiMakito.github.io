@@ -9,7 +9,7 @@
 </div>
 
 <div class="copyright" >
-  <span class="author" itemprop="copyrightHolder">若未特殊注明，则为原创内容。使用时请遵守<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>协议。</span>
+  <span class="author" itemprop="copyrightHolder">使用本站文章时请遵守<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>协议。</span>
 </div>
 
 <div class="powered-by">
@@ -22,5 +22,15 @@
     NexT{% if theme.scheme %}.{{ theme.scheme }}{% endif %}
   </a>
 </div>
+
+{% if theme.use_font_lato %}
+<script type="text/javascript">
+  {% if config.language === 'zh-Hans' %}
+    loadCSS('//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext');
+  {% else %}
+    loadCSS('//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext');
+  {% endif %}
+</script>
+{% endif %}
 
 {% block footer %}{% endblock %}

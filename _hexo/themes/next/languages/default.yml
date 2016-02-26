@@ -10,7 +10,10 @@ menu:
   tags: Tags
   about: About
   search: Search
-
+  github: GitHub
+  weibo: Weibo
+  links: Links
+  
 sidebar:
   overview: Overview
   toc: Table Of Contents

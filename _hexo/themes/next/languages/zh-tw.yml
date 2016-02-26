@@ -10,8 +10,10 @@ menu:
   tags: 標籤
   about: 關於
   search: 檢索
-
-
+  github: GitHub
+  weibo: 微博
+  links: 連結
+  
 sidebar:
   overview: 本站概覽
   toc: 文章目錄
