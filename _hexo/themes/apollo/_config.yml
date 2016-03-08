@@ -1,8 +1,8 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
+    Weibo: http://weibo.com/u/2393492311
+    GitHub: https://github.com/sumimakito
     Rss: /atom.xml
 
 favicon: /favicon.png
@@ -11,18 +11,18 @@ logo: /favicon.png
 # Comment
 # e.g disqus: seansun
 disqus:
-duoshuo: 
+duoshuo: blogkeepmoe
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-73442912-1
 # baidu-analytics:
-ba: //hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2
+ba:
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2014
 
 # Font CDN
 #true : use google fonts api, not stable for chinese visitor sometimes, caused by force majeure factor
 #false: use useso fonts api instead of google's, great response speed for chinese visitor
-googlefonts: true
+googlefonts: false
