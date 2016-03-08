@@ -15,3 +15,5 @@ mkdir tmp
 export OPENSHIFT_TMP_DIR="`pwd`/tmp/"  
 npm install express
 </pre>
+
+<!-- more -->
