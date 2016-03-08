@@ -4,8 +4,8 @@ html(lang=config.language)
         include head
     body
         header
-            h3 config.title
-            h5 config.subtitle
+            a.logo-link(href=url_for())
+                h1(config.title)
             include nav
         section.container
             block container
