@@ -4,8 +4,8 @@ html(lang=config.language)
         include head
     body
         header
-            a.logo-link(href=url_for())
-                img(src=theme.logo)
+            h3 config.title
+            h5 config.subtitle
             include nav
         section.container
             block container
