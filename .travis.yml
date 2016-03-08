@@ -5,7 +5,7 @@ install:
   - cd ./_hexo
   - npm install hexo-cli -g
   - npm install hexo --save
-  - npm install hexo-generator-feed --save
+  - npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
   - npm install
 script:
   - chmod +x ../build.sh
