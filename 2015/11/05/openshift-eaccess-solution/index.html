@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Openshift下使用NPM时出现EACCESS错误的解决办法 · Makito的笔记本</title><meta name="description" content="Openshift下使用NPM时出现EACCESS错误的解决办法 - Sumi Makito"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">MAKITO的笔记本</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/links" target="_self" class="nav-list-link">链接</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2393492311" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="https://github.com/sumimakito" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Openshift下使用NPM时出现EACCESS错误的解决办法</h1><div class="post-time">2015年11月5日</div><div class="post-content"><p>Npm是Node.js的包管理器，有时安装一些新模块都需要依靠npm install这个命令，但在Openshift这种限制多多的环境下，直接使用npm install这种命令安装模块可能会遇到各种错误，常见的就是本文所说的EACCESS错误。</p>
+
+<p>这种错误通常是由权限不足导致的，在Openshift这种环境下也不难见到这种问题，因为npm在安装新模块时需要一个临时目录，而普通用户对环境变量中的临时目录是无权写入的，因此修改一下环境变量，把它指向我们有权限读写的文件夹就可以解决这个问题。</p>
+
+<p>使用SSH Shell连接到你的服务器后使用以下命令(这里以安装express为例)</p>
+
+<pre>cd app-root/repo/  
+mkdir tmp  
+export OPENSHIFT_TMP_DIR="`pwd`/tmp/"  
+npm install express
+</pre>
+
+<a id="more"></a>
+</div></article></div></section><footer><div class="paginator"><a href="/2015/11/06/hexo-and-travis-ci/" class="prev">上一篇</a><a href="/2014/12/01/android-game-drawing-method/" class="next">下一篇</a></div><div data-thread-key="2015/11/05/openshift-eaccess-solution/" data-title="Openshift下使用NPM时出现EACCESS错误的解决办法" data-url="http://blog.keep.moe/2015/11/05/openshift-eaccess-solution/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"blogkeepmoe"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2014 - 2016
+&nbsp;<a href="http://blog.keep.moe/">Makito的笔记本</a></p><p>使用本站文章时请遵守<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CCBY-NC-ND 4.0</a>协议。</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-73442912-1",'auto');ga('send','pageview');</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cdiv%20style%3D%22display%3Anone%3B%22%3E %3Cspan id='cnzz_stat_icon_1256726171'%3E%3C/span%3E %3C/div%3E %3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256726171%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script></body></html>
