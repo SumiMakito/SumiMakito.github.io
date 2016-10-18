@@ -1,3 +1,0 @@
-gitpython
-markdown2
-html2text
