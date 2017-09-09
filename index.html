@@ -1,22 +1,67 @@
-<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Makito的笔记本</title><meta name="description" content="A Blog Powered By Hexo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">MAKITO的笔记本</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/links" target="_self" class="nav-list-link">链接</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2393492311" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="https://github.com/sumimakito" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2015/11/23/avoid-screenshot-in-android-app/" class="post-title-link">防止Android应用内截图</a></h2><div class="post-time">2015年11月23日</div><div class="post-content"><p>很多时候，用户需要在我们的应用中输入类似于身份证号、密码、银行卡号等敏感信息，此时如果在后台不怀好意的应用程序对这些敏感页面进行截图，将导致用户的个人信息泄露。<br>Android为我们提供了一种可以防止Activity被截图的方案来保护用户的隐私。<br></div><a href="/2015/11/23/avoid-screenshot-in-android-app/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2015/11/06/hexo-and-travis-ci/" class="post-title-link">配合Travis CI，将Hexo博客自动部署到你的服务器上。</a></h2><div class="post-time">2015年11月6日</div><div class="post-content"><blockquote>
-<p>这篇教程将指导你如何将写好的文章通过Git提交至GitHub仓库，并使用Travis CI自动构建、部署到你的服务器上。</p>
-</blockquote>
-<p>今年夏天的时候，为了多练习Python，于是用就它写了一个简单的静态博客生成器，有模板有标签，不过与现有的静态博客相比还是相形见绌。即不易管理，也总出现BUG。</p>
-<p>博客是需要静下心来写的，程序总需要维护实在不是长计，于是，昨天我便把博客换成了Hexo。<del>终于可以安静的写博客了。</del></p>
-<p>Hexo是一个基于Node.js的博客框架，从模板、主题再到插件应有尽有，写好文章后可以得到一个静态整站，对于像个人博客这种更新需求不大的网站是再适合不过了。</p>
-<p>网上给出的教程多是将博客托管于GitHub Pages上，然而GitHub Pages在国内部分地区以及部分运营商的网络下的表现有时并不完美，经常出现载入缓慢，CSS及JS无法载入的问题，因此也有部分人选择将博客放在自己的服务器上。</p>
-<p>但是在个人服务器上搭建博客又要考虑一个非常重要的问题——备份数据。GitHub提供的版本控制功能非常强大，但是个人服务器上大都没有使用版本控制系统，需要自行备份。</p>
-<p>为什么不把GitHub的强大版本控制功能与个人服务器的访问速度结合在一起呢？</p></div><a href="/2015/11/06/hexo-and-travis-ci/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2015/11/05/openshift-eaccess-solution/" class="post-title-link">Openshift下使用NPM时出现EACCESS错误的解决办法</a></h2><div class="post-time">2015年11月5日</div><div class="post-content"><p>Npm是Node.js的包管理器，有时安装一些新模块都需要依靠npm install这个命令，但在Openshift这种限制多多的环境下，直接使用npm install这种命令安装模块可能会遇到各种错误，常见的就是本文所说的EACCESS错误。</p>
+<!--
+  Makito loves you.
+-->
 
-<p>这种错误通常是由权限不足导致的，在Openshift这种环境下也不难见到这种问题，因为npm在安装新模块时需要一个临时目录，而普通用户对环境变量中的临时目录是无权写入的，因此修改一下环境变量，把它指向我们有权限读写的文件夹就可以解决这个问题。</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        Hello Makito
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0 "/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js">
+    </script>
+    <script src="../bower_components/respond/dest/respond.min.js">
+    </script>
+    <![endif]-->
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Cousine" rel="stylesheet">
+    <style>
+        a {
+            color: #0fbce7;
+        }
 
-<p>使用SSH Shell连接到你的服务器后使用以下命令(这里以安装express为例)</p>
+        a:hover {
+            color: #4ecdec;
+        }
 
-<pre>cd app-root/repo/  
-mkdir tmp  
-export OPENSHIFT_TMP_DIR="`pwd`/tmp/"  
-npm install express
-</pre></div><a href="/2015/11/05/openshift-eaccess-solution/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2014/12/01/android-game-drawing-method/" class="post-title-link">Android游戏开发中的几种绘图方式</a></h2><div class="post-time">2014年12月1日</div><div class="post-content"><p>在大部分Android游戏中，游戏画面的更新都是通过单独线程来完成的，若是直接在主线程上绘制，可能会造成无响应(ANR)等问题，因此需要在单独线程中完成绘图。</p>
-<p>由于游戏场景有时会很复杂，可能需要分别绘制背景、控件、人物、文字等内容，部分3D游戏还需要渲染贴图，因此在单独线程中绘图也可能会发生卡顿或丢帧的问题。这个时候就需要想办法提高绘制效率、优化内存，尤其是频繁重绘且重绘物体较多的程序。<br></div><a href="/2014/12/01/android-game-drawing-method/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2014/11/03/hello-world/" class="post-title-link">Hello, world!</a></h2><div class="post-time">2014年11月3日</div><div class="post-content"><p>一年前实验性的买了2.99USD/年的.info域名(<del>szumi.info</del>)，它实在过于垃圾以至于我都不愿提起，最终也因续不起费也不想续费而告终。<br>今天终于在Hostker注册到了一个好域名(至少我认为还不错)，价格还可以接受，95CNY/年，以后就用它了，新家就在这里。<br>你好，我是Makito。<br></div><a href="/2014/11/03/hello-world/" class="read-more">...阅读全文</a></article></li></ul></section><footer><div class="paginator"></div><div class="copyright"><p>© 2014 - 2016
-&nbsp;<a href="http://blog.keep.moe/">Makito的笔记本</a></p><p>使用本站文章时请遵守<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CCBY-NC-ND 4.0</a>协议。</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-73442912-1",'auto');ga('send','pageview');</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cdiv%20style%3D%22display%3Anone%3B%22%3E %3Cspan id='cnzz_stat_icon_1256726171'%3E%3C/span%3E %3C/div%3E %3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256726171%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script></body></html>
+        body {
+            font-family: 'Cousine', monospace;
+            background-color: #000;
+            padding: 0px;
+        }
+
+        .console {
+            color: #fff;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="console">
+    <p><span style="color: #f77777;">W</span><span style="color: #f8be77;">e</span><span
+            style="color: #f8f277;">l</span><span style="color: #d2f877;">c</span><span style="color: #91f877;">o</span><span
+            style="color: #77f897;">m</span><span style="color: #77f8da;">e</span><span style="color: #77d2f8;"> </span><span
+            style="color: #77abf8;">b</span><span style="color: #9377f8;">a</span><span style="color: #cb77f8;">c</span><span
+            style="color: #f877cd;">k</span><span style="color: #f8778f;">!</span><br>
+        GitHub:~ sumimakito$ makito --open-in-browser<br>
+        Syncing ...<br>
+        <span style="color: #0fbce7;">Now redirecting you to <a
+                href="https://www.keep.moe">keep.moe</a> ...</span><br>
+        <span style="color: #fff;background-color: #0fbce7;"></span>
+    </p>
+</div>
+<script>
+    setTimeout(function () {
+        location.href = "https://www.keep.moe"
+    }, 5000);
+</script>
+</body>
+
+</html>
